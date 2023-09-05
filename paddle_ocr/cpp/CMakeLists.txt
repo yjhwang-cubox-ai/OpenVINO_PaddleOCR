@@ -1,0 +1,7 @@
+file(GLOB_RECURSE SOURCES ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
+file (GLOB HRDS include/*.h)
+
+add_demo(NAME paddle_ocr
+    SOURCES ${SOURCES}
+    HEADERS ${HRDS}
+    INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include")
